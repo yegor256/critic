@@ -1,0 +1,21 @@
+{
+  "author": {
+    "email": "yegor256@gmail.com",
+    "name": "Yegor Bugayenko"
+  },
+  "description": "Skills for an AI critic that helps writing and proofreading texts: argument analysis, prose rewriting, plain-text formatting, and subtitle proofreading",
+  "homepage": "https://github.com/yegor256/critic",
+  "keywords": [
+    "skills",
+    "writing",
+    "proofreading",
+    "prose",
+    "editing",
+    "critic",
+    "argumentation"
+  ],
+  "license": "MIT",
+  "name": "yegor256-critic",
+  "repository": "https://github.com/yegor256/critic",
+  "version": "0.1.0"
+}
