@@ -10,6 +10,11 @@ description: |
   a structured list. Do NOT rewrite the prose, soften the
   author's tone, or replace the conclusion with your own
   opinion; the job is diagnosis, not surgery.
+  Use when user says "critique my argument", "review my
+  essay", "find logical fallacies", "check the reasoning",
+  "argument analysis", "is this argument sound", "poke holes
+  in this", "steelman or break this", or "diagnose the
+  argument".
 ---
 
 Read the whole text once before flagging anything; an
@@ -65,13 +70,11 @@ Hunt for circular reasoning by asking, for each premise,
   whether it is independently believable or whether it only
   becomes believable once you already accept the conclusion.
 
-Name specific fallacies when present and quote the line that
-  triggers the call: ad hominem, straw man, false dichotomy,
-  slippery slope, hasty generalization, post hoc ergo
-  propter hoc, appeal to authority, appeal to popularity,
-  appeal to tradition, appeal to novelty, tu quoque, red
-  herring, no true Scotsman, composition, division, false
-  analogy, begging the question, and moving the goalposts.
+Name specific fallacies when present and quote the line
+  that triggers the call; consult `references/fallacies.md`
+  for the catalogue of recognized names and their
+  definitions, and use the names from that file verbatim so
+  the reader can look them up.
 
 Treat one anecdote as one anecdote; flag any place where a
   single example, a single project, or a single career

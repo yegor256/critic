@@ -8,6 +8,12 @@ description: |
   lines by two spaces. Do NOT apply to source code files, code
   blocks inside Markdown, YAML, JSON, or any file where
   line breaks change meaning.
+  Use when user says "one sentence per line", "reflow",
+  "wrap lines", "format my markdown", "fix line breaks",
+  "reformat", "semantic line breaks", or "ventilated prose".
+  This skill changes line layout only; for wording fixes
+  (cut filler, fix grammar, tighten phrasing) invoke
+  `rewrite-prose` first, then reformat with this skill.
 ---
 
 Start every sentence on a new line, even when sentences are

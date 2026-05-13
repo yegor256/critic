@@ -10,6 +10,12 @@ description: |
   phrasing with cleaner alternatives, fix grammar, and cut
   filler words, clichés, and tautologies. Do NOT apply to
   the surrounding code, YAML, JSON, or quoted material.
+  Use when user says "polish this", "tighten up", "edit my
+  prose", "fix the wording", "proofread this", "rewrite",
+  "make this clearer", "cut the fluff", or "improve the
+  writing". This skill changes wording only; for line layout
+  (one sentence per line, wrap at 80, indent continuations)
+  invoke `format-plain-text` afterwards on the same file.
 ---
 
 Never change the tone of voice; a formal text stays formal,
@@ -86,3 +92,8 @@ Do not touch the author's chosen vocabulary when correct,
 Make the smallest change that fixes the problem, and show
   the original next to a non-trivial rewrite so the author
   can confirm the meaning was preserved.
+
+When the file already follows one-sentence-per-line layout
+  (sentences on separate lines, continuations indented by two
+  spaces), reflow every touched sentence to keep that layout
+  valid; otherwise leave the existing line breaks alone.

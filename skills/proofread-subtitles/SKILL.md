@@ -8,6 +8,10 @@ description: |
   and the overall block structure untouched. Apply to
   English and Russian subtitles alike, and keep computer
   jargon in its conventional form.
+  Use when user says "proofread subtitles", "fix the srt",
+  "clean up whisper output", "punctuate subtitles", "fix
+  captions", "subtitle proofreading", or attaches a `.srt`
+  file for review.
 ---
 
 Never modify timestamps, cue numbers, or the blank line
