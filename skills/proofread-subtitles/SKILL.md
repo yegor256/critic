@@ -14,6 +14,17 @@ description: |
   file for review.
 ---
 
+Before editing the file, ask the author for a short list
+  of domain-specific terms — proper nouns, product names,
+  library and command names, technical jargon — that the
+  voice-to-text engine is likely to mis-render, and use
+  that list as the primary reference for spotting errors.
+
+When the author declines to supply terms or asks to start
+  immediately, proceed with the rules below and flag any
+  cue whose correction was uncertain by its cue number so
+  the author can review it afterwards.
+
 Never modify timestamps, cue numbers, or the blank line
   between cues; the file comes from a voice-to-text engine
   whose timing is authoritative.
@@ -79,3 +90,18 @@ Preserve the file's character encoding (UTF-8) and line
 When unsure whether a change preserves the speaker's
   meaning, leave the original text and flag the cue number
   for the author to review.
+
+Write the corrected output to a sibling file named
+  `<original>-corrected.srt` rather than overwriting the
+  source, so the author can diff the two versions before
+  discarding the original.
+
+After editing, verify that the number of cues, every cue
+  number, and every timestamp line in the output match the
+  source exactly; if any of these differ, the edit broke
+  timing and must be redone before the file is delivered.
+
+At the end of the run, report a short categorized summary
+  of what was changed — punctuation, capitalization, jargon
+  corrections, line splits, flagged cues — so the author
+  can scan the edits without running a diff tool.
