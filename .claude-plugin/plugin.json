@@ -15,7 +15,7 @@
     "argumentation"
   ],
   "license": "MIT",
-  "name": "yegor256-critic",
+  "name": "critic",
   "repository": "https://github.com/yegor256/critic",
   "version": "0.1.0"
 }
