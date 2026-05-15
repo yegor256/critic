@@ -17,7 +17,7 @@ description: |
 Before editing the file, ask the author for a short list
   of domain-specific terms — proper nouns, product names,
   library and command names, technical jargon — that the
-  voice-to-text engine is likely to mis-render, and use
+  voice-to-text engine is likely to misrender, and use
   that list as the primary reference for spotting errors.
 
 When the author declines to supply terms or asks to start
