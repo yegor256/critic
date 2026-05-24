@@ -1,99 +1,37 @@
 ---
 name: rewrite-prose
 description: |
-  Use this skill when writing, proofreading, or polishing the
-  wording of plain text documents — Markdown (.md), TeX (.tex),
-  or .txt files — and the English text embedded in source
-  code: comments, docstrings, log messages, error messages,
-  and user-facing strings. Apply the rules conservatively:
-  preserve the author's voice and meaning, replace awkward
-  phrasing with cleaner alternatives, fix grammar, and cut
-  filler words, clichés, and tautologies. Do NOT apply to
-  the surrounding code, YAML, JSON, or quoted material.
-  Use when user says "polish this", "tighten up", "edit my
-  prose", "fix the wording", "proofread this", "rewrite",
-  "make this clearer", "cut the fluff", or "improve the
-  writing". This skill changes wording only; for line layout
-  (one sentence per line, wrap at 80, indent continuations)
-  invoke `format-plain-text` afterwards on the same file.
+  Use this skill to polish the wording of plain text documents
+  and English embedded in source code.
 ---
 
-Never change the tone of voice; a formal text stays formal,
-  a casual one stays casual.
-
-Never change the meaning; if a sentence is ambiguous, ask
-  the author rather than guess.
-
-Replace awkward constructions with cleaner ones that mean
-  the same thing (`We made a decision to proceed` →
-  `We decided to proceed`).
-
-Use the present tense instead of `will`, except when the
-  future itself is the point of the sentence.
-
-Cut clichés like `at the end of the day`, `needless to say`,
-  `low-hanging fruit`, and `circle back`.
-
-Cut tautologies (`end result` → `result`, `each and every`
-  → `each`, `free gift` → `gift`).
-
-Use the Oxford comma in lists of three or more items.
-
-Do not use `etc.`, `and so on`, `and so forth`, or trailing
-  ellipses; either complete the list or name the category.
-
-Prefer active voice unless the actor is unknown or
-  irrelevant.
-
-Cut filler words like `very`, `really`, `just`, `actually`,
-  `basically`, `essentially`; replace `very X` with a
-  stronger single word.
-
+Never change the tone of voice.
+Never change the meaning.
+Ask the author when a sentence is ambiguous.
+Replace awkward constructions with cleaner ones of the same meaning.
+Use present tense instead of `will`, except when the future is the point.
+Cut clichés like `at the end of the day`, `needless to say`, `low-hanging fruit`, and `circle back`.
+Cut tautologies like `end result`, `each and every`, or `free gift`.
+Use the Oxford comma in lists of three or more.
+Do not use `etc.`, `and so on`, `and so forth`, or trailing ellipses.
+Complete the list or name the category instead.
+Prefer active voice unless the actor is unknown or irrelevant.
+Cut filler words like `very`, `really`, `just`, `actually`, `basically`, and `essentially`.
+Replace `very X` with a stronger single word.
 Replace `in order to` with `to`.
-
-Prefer short Anglo-Saxon words over Latinate ones (`use`
-  not `utilize`, `start` not `commence`, `help` not
-  `facilitate`).
-
-Drop `that` when removing it does not hurt readability.
-
-Avoid double negatives (`not uncommon` → `common`).
-
-Keep parallel grammatical structure across items in a list.
-
-Split sentences that carry two ideas joined by `and` or
-  `but`.
-
-Avoid `there is` and `there are`, which delay the real
-  subject.
-
-Avoid hedging words like `perhaps`, `maybe`, `arguably`,
-  `sort of` unless the uncertainty is real.
-
-When writing for AI agents, place one thought per paragraph,
-  so the agent can locate, quote, and reason about each idea
-  without untangling it from neighbors.
-
+Prefer Anglo-Saxon words over Latinate, like `use` over `utilize` or `start` over `commence`.
+Drop `that` when removal does not hurt readability.
+Avoid double negatives like `not uncommon`.
+Keep parallel grammar across list items.
+Split sentences carrying two ideas joined by `and` or `but`.
+Avoid `there is` and `there are`, which delay the subject.
+Avoid hedging words like `perhaps`, `maybe`, `arguably`, or `sort of` unless uncertainty is real.
+When writing for AI agents, place one thought per paragraph.
 Headings carry no trailing period.
-
-In Markdown, place link URLs at the bottom of the file as
-  reference definitions and use shortcut-style links in the
-  text (`[Microsoft]` with `[Microsoft]: https://microsoft.com`
-  at the end), not inline (`[Microsoft](https://microsoft.com)`).
-
-Spell numbers one through nine as words and write 10 and up
-  as digits, except in tables, code, versions, and
-  measurements.
-
-Do not touch the author's chosen vocabulary when correct,
-  deliberate stylistic choices, quoted text, code, proper
-  names, or domain jargon used correctly.
-
-Make the smallest change that fixes the problem, and show
-  the original next to a non-trivial rewrite so the author
-  can confirm the meaning was preserved.
-
-When the file already follows one-sentence-per-line layout
-  (sentences on separate lines, continuations indented by two
-  spaces), reflow every touched sentence to keep that layout
-  valid; otherwise leave the existing line breaks alone.
+In Markdown, place URLs at the bottom as reference definitions and use shortcut links in the text.
+Spell numbers one through nine as words and 10 and up as digits, except in tables, code, versions, and measurements.
+Do not touch the author's vocabulary, stylistic choices, quoted text, code, proper names, or domain jargon used correctly.
+Make the smallest change that fixes the problem.
+Show the original next to a non-trivial rewrite so the author can confirm meaning was preserved.
+Reflow every touched sentence when the file uses one-sentence-per-line layout.
+Leave existing line breaks alone otherwise.
