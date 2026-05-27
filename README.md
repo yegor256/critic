@@ -24,7 +24,7 @@ You do not need to clone this repository — install the bundle as a
 Inside a Claude Code session, run:
 
 ```text
-/plugin marketplace add yegor256/plugins
+/plugin marketplace add https://github.com/yegor256/plugins
 /plugin install critic@yegor256
 ```
 
