@@ -1,42 +1,65 @@
 ---
 name: proofread-subtitles
 description: |
-  Use this skill to proofread a `.srt` subtitle file produced
-  by Whisper or another voice-to-text engine.
+  Use this skill when the user wants to proofread a `.srt` subtitle file
+  produced by Whisper or another voice-to-text engine.
 ---
 
-Ask the author for domain-specific terms the engine likely misrenders.
-Use that list as the primary reference for errors.
-Proceed without the list when the author declines.
+## Reference
+
+Ask author for domain-specific terms engine likely misrenders.
+Use that list as primary reference for errors.
+Proceed without list when author declines.
 Flag uncertain cues by number instead.
-Never modify timestamps, cue numbers, or the blank line between cues.
+
+## Structure
+
+Never modify timestamps, cue numbers, or blank line between cues.
 Never merge two cues or split one cue across two.
-Break any line over 42 characters into two within the same cue.
-Split at a clause boundary, comma, or conjunction.
+Break any line over 42 characters into two within same cue.
+Split at clause boundary, comma, or conjunction.
 Allow at most two text lines per cue.
-Shorten wording rather than add a third line.
+Shorten wording rather than add third line.
+
+## Punctuation
+
 Add punctuation where spoken phrasing requires it.
-Follow the source language's rules.
-Capitalize the first word of every sentence and every proper noun.
-End every sentence with a terminal mark.
+Follow source language's rules.
+Capitalize first word of every sentence and every proper noun.
+End every sentence with terminal mark.
+
+## Corrections
+
 Fix obvious homophone and word misrecognitions when context is unambiguous.
 Preserve computer jargon in its conventional form.
 Use `API`, `CLI`, `Git`, `Docker`, `JSON`, `HTTP`, and `Kubernetes` as written.
+Fix typos and spacing errors without rewording sentence.
+
+## Russian
+
 In Russian subtitles, write computer terms in English.
-Follow the conventions of Russian tech speech.
+Follow conventions of Russian tech speech.
 Write `pull request` instead of `пулл реквест`.
 Keep transliterations already standard in Russian.
-Fix typos and spacing errors without rewording the sentence.
-Do not paraphrase, summarize, or polish the speaker's wording.
+
+## Preserve
+
+Do not paraphrase, summarize, or polish speaker's wording.
 Do not delete filler words like `uh`, `um`, `well`, `ну`, or `вот`.
-Delete them only when asked for a clean transcript.
+Delete them only when asked for clean transcript.
 Do not add speaker labels or sound descriptions.
-Do not add bracketed annotations unless the source already uses them.
-Preserve the file's UTF-8 encoding and line endings.
-Leave the original when unsure a change preserves meaning.
-Flag the cue number instead.
-Write the output to a sibling file `<original>-corrected.srt`.
-Never overwrite the source.
-Verify the cue count matches the source.
+Do not add bracketed annotations unless source already uses them.
+Preserve file's UTF-8 encoding and line endings.
+
+## Uncertain
+
+Leave original when unsure change preserves meaning.
+Flag cue number instead.
+
+## Output
+
+Write output to sibling file `<original>-corrected.srt`.
+Never overwrite source.
+Verify cue count matches source.
 Verify every cue number and timestamp matches too.
-Report a short categorized summary of changes at the end.
+Report short categorized summary of changes at end.
