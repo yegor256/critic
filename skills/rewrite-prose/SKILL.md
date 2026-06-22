@@ -7,8 +7,8 @@ description: |
 
 ## Meaning
 
-Never change tone of voice.
-Never change meaning.
+Preserve tone of voice.
+Preserve meaning exactly.
 Ask author when sentence is ambiguous.
 Replace awkward constructions with cleaner ones of same meaning.
 
@@ -30,13 +30,12 @@ Rewrite any sentence engineered to read like pull-quote.
 ## Lists
 
 Use Oxford comma in lists of three or more.
-Do not use `etc.`, `and so on`, `and so forth`, or trailing ellipses.
-Complete list or name category instead.
+Complete every list or name its category.
+Drop trailing `etc.`, `and so on`, `and so forth`, or ellipses.
 
 ## Dashes
 
-Never join two clauses with em dash.
-Use period or recast sentence instead.
+Separate two clauses with period or recast sentence rather than em dash.
 
 ## Voice
 
@@ -57,7 +56,7 @@ Replace `in order to` with `to`.
 Prefer Anglo-Saxon words over Latinate.
 Use `use` instead of `utilize`, and `start` instead of `commence`.
 Drop `that` when removal does not hurt readability.
-Avoid double negatives like `not uncommon`.
+Replace double negatives like `not uncommon` with positive word.
 
 ## Rhythm
 
@@ -68,11 +67,11 @@ Split sentences carrying two ideas joined by `and` or `but`.
 
 ## Subjects
 
-Avoid `there is` and `there are`, which delay subject.
+Lead with real subject instead of `there is` or `there are`, which delay it.
 
 ## Hedging
 
-Avoid hedging words like `perhaps`, `maybe`, `arguably`, or `sort of`.
+Cut hedging words like `perhaps`, `maybe`, `arguably`, and `sort of`.
 Use them only when uncertainty is real.
 
 ## Layout
@@ -85,14 +84,14 @@ Use shortcut links in body text.
 ## Numbers
 
 Spell numbers one through nine as words.
-Spell 10 and up as digits.
+Write numbers from ten upward as digits.
 Keep digits in tables, code, versions, and measurements.
 
 ## Restraint
 
-Do not touch author's vocabulary or stylistic choices.
-Do not touch quoted text, code, or proper names.
-Do not touch domain jargon used correctly.
+Preserve author's vocabulary and stylistic choices.
+Preserve quoted text, code, and proper names.
+Preserve domain jargon that already follows its field's convention.
 Make smallest change that fixes problem.
 
 ## Review
@@ -105,3 +104,17 @@ Read result once and remove anything that still sounds machine-generated.
 
 Reflow every touched sentence when file uses one-sentence-per-line layout.
 Leave existing line breaks alone otherwise.
+
+## Example
+
+Polish this draft.
+
+```text
+At the end of the day, we utilized the system in order to basically improve things.
+```
+
+Return this version.
+
+```text
+We used the system to improve throughput.
+```

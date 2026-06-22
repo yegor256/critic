@@ -21,7 +21,7 @@ Apply to blockquotes and full-sentence list items too.
 ## Skip
 
 Skip fenced code and inline code.
-Skip YAML or TOML frontmatter, tables, headings, and link references.
+Skip frontmatter, tables, headings, and link references.
 Skip any line where hard break changes rendered output.
 
 ## Reflow
@@ -29,3 +29,30 @@ Skip any line where hard break changes rendered output.
 Preserve layout when document already follows these rules.
 Reformat only sentences you touch when document does not follow them.
 Reflow whole document only when asked.
+
+## Output
+
+Return input text with each sentence on its own line.
+Indent every continuation line two spaces.
+Preserve every word, punctuation mark, and code span unchanged.
+
+## Done
+
+Confirm every sentence begins on its own line.
+Confirm prose lines fit 80 characters, or 100 characters for `.tex`.
+Confirm wording and character count match input.
+
+## Example
+
+Reflow this input.
+
+```text
+The committee approved the budget. Work starts on Monday.
+```
+
+Return this layout.
+
+```text
+The committee approved the budget.
+Work starts on Monday.
+```

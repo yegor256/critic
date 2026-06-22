@@ -14,8 +14,8 @@ Flag uncertain cues by number instead.
 
 ## Structure
 
-Never modify timestamps, cue numbers, or blank line between cues.
-Never merge two cues or split one cue across two.
+Keep timestamps, cue numbers, and blank line between cues unchanged.
+Keep each cue's boundaries exactly as in source.
 Break any line over 42 characters into two within same cue.
 Split at clause boundary, comma, or conjunction.
 Allow at most two text lines per cue.
@@ -44,12 +44,12 @@ Keep transliterations already standard in Russian.
 
 ## Preserve
 
-Do not paraphrase, summarize, or polish speaker's wording.
-Do not delete filler words like `uh`, `um`, `well`, `ну`, or `вот`.
-Delete them only when asked for clean transcript.
-Do not add speaker labels or sound descriptions.
-Do not add bracketed annotations unless source already uses them.
-Preserve file's UTF-8 encoding and line endings.
+Preserve speaker's wording verbatim.
+Keep filler words like `uh`, `um`, `well`, `ну`, and `вот`.
+Delete them only when author requests filler-free transcript.
+Omit speaker labels and sound descriptions.
+Add bracketed annotations only where source already uses them.
+Preserve file's existing encoding and line endings.
 
 ## Uncertain
 
@@ -59,7 +59,25 @@ Flag cue number instead.
 ## Output
 
 Write output to sibling file `<original>-corrected.srt`.
-Never overwrite source.
+Keep source file intact.
 Verify cue count matches source.
 Verify every cue number and timestamp matches too.
 Report short categorized summary of changes at end.
+
+## Example
+
+Correct this raw cue.
+
+```text
+1
+00:00:01,000 --> 00:00:03,000
+lets push this to git hub tomorrow
+```
+
+Return this cue.
+
+```text
+1
+00:00:01,000 --> 00:00:03,000
+Let's push this to GitHub tomorrow.
+```

@@ -66,8 +66,8 @@ Distinguish description from prescription.
 
 ## Fairness
 
-Be charitable on small slips and strict on load-bearing ones.
-Do not invent objections no honest reader would raise.
+Forgive slips that leave conclusion intact and challenge load-bearing ones.
+Raise only objections honest reader would make.
 
 ## Report
 
@@ -79,5 +79,28 @@ Name which load-bearing claims survive and whether thesis stands.
 
 ## Restraint
 
-Never rewrite prose or change author's voice.
-Never substitute your conclusion for theirs.
+Leave prose and author's voice intact.
+Keep author's conclusion as theirs.
+
+## Done
+
+Confirm each finding carries snippet, fallacy name, explanation, and remedy.
+Confirm report ends with one-paragraph verdict naming which claims survive.
+
+## Example
+
+Take this argument as input.
+
+```text
+Sales rose after the rebrand, so the rebrand drove the growth.
+```
+
+Return this report.
+
+```text
+1. Post hoc fallacy — "drove the growth" treats sequence as cause.
+   Explanation: rebrand and growth could share another driver.
+   Remedy: compare against comparable period without rebrand.
+
+Verdict: causal claim unsupported, so thesis does not stand.
+```
