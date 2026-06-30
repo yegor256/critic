@@ -58,8 +58,7 @@ Notice when burden of proof shifts onto reader.
 
 Hunt for contradictions across paragraphs.
 Compare introduction's promise against conclusion's delivery.
-Flag paragraphs that restate earlier claims.
-Mark restatements that add no evidence, distinction, or consequence.
+Flag restated claims that add no evidence, distinction, or consequence.
 Notice scope creep, where narrow claim inflates into sweeping one.
 Check order of reasoning.
 Distinguish description from prescription.

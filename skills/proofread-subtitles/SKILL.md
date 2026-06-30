@@ -44,7 +44,7 @@ Keep transliterations already standard in Russian.
 
 ## Preserve
 
-Preserve speaker's wording verbatim.
+Preserve speaker's word choice and phrasing.
 Keep filler words like `uh`, `um`, `well`, `ну`, and `вот`.
 Delete them only when author requests filler-free transcript.
 Omit speaker labels and sound descriptions.
